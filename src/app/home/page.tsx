@@ -3,6 +3,9 @@ import BaseLayout from "@/components/baselayout";
 import React, { FC, ReactElement } from "react";
 import Logo from "@/assets/master-logo.png";
 import Image from "next/image";
+import IconLinkend from "@/assets/ic-linked.svg";
+import IconInstagram from "@/assets/ic-insta.svg";
+import Link from "next/link";
 const Beranda: FC = (): ReactElement => {
   return (
     <BaseLayout>
@@ -30,7 +33,22 @@ const Beranda: FC = (): ReactElement => {
               <p className="font-bold text-2xl border-b">
                 Lets Connect on Social Media!
               </p>
-              <p>4</p>
+              <div className="flex flex-row pt-4">
+                <Link
+                  href={
+                    "https://www.linkedin.com/in/cionta-immanuel-kaban-8b9403270/"
+                  }
+                  target="_blank"
+                >
+                  <Image src={IconLinkend} alt="linked" />
+                </Link>
+                <Link
+                  href={"https://www.instagram.com/imanuelcio"}
+                  target="_blank"
+                >
+                  <Image src={IconInstagram} alt="instagram" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
