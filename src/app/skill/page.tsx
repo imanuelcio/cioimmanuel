@@ -1,14 +1,12 @@
+"use client";
 import BaseLayout from "@/components/baselayout";
-import React from "react";
+import React, { FC, ReactElement } from "react";
 
-const Skill = () => {
+const Skill: FC = (): ReactElement => {
   return (
-    <>
-      <BaseLayout>
-        <div>Ini Adalah Halaman Skills</div>;
-      </BaseLayout>
-      ;
-    </>
+    <BaseLayout>
+      <div>Ini Adalah Halaman Skills</div>
+    </BaseLayout>
   );
 };
 

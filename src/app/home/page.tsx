@@ -9,7 +9,7 @@ import Link from "next/link";
 const Beranda: FC = (): ReactElement => {
   return (
     <BaseLayout>
-      <div className="w-full h-screen">
+      <div className="w-full h-full scrollbar-hide">
         <div className="space-y-10 justify-center w-full">
           <div className="flex pt-10">
             <h1 className="text-2xl">
@@ -49,6 +49,30 @@ const Beranda: FC = (): ReactElement => {
                   <Image src={IconInstagram} alt="instagram" />
                 </Link>
               </div>
+            </div>
+          </div>
+        </div>
+        <p className="font-bold text-2xl border-b pt-10">Project</p>
+        <div className="grid grid-cols-2 place-items-center pt-12">
+          <div className="flex flex-row space-x-10">
+            <Image src={Logo} alt="Logo" width={100} height={100} />
+            <div className="space-y-3">
+              <h1 className="text-2xl font-semibold">Youtube Clone</h1>
+              <p className="w-[400px]">
+                This project created with ReactJs CRA. Consume public API from
+                restapi.com
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-row space-x-10">
+            <Image src={Logo} alt="Logo" width={100} height={100} />
+            <div className="space-y-3">
+              <h1 className="text-2xl font-semibold">
+                Todo List with Rest API
+              </h1>
+              <p className="w-[400px]">
+                This project created with ReactJs CRA with local JSON server.
+              </p>
             </div>
           </div>
         </div>
