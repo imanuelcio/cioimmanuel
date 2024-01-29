@@ -6,6 +6,7 @@ import Image from "next/image";
 import IconLinkend from "@/assets/ic-linked.svg";
 import IconInstagram from "@/assets/ic-insta.svg";
 import Link from "next/link";
+
 const Beranda: FC = (): ReactElement => {
   return (
     <BaseLayout>
@@ -22,17 +23,17 @@ const Beranda: FC = (): ReactElement => {
               <Image src={Logo} alt="Logo" width={350} height={100} />
             </div>
             <div className="flex flex-col w-full space-y-4">
-              <p className="font-bold text-2xl border-b">Biography</p>
-              <p className="pt-4">
+              <h1 className="font-bold text-2xl border-b">Biography</h1>
+              <h1 className="pt-4">
                 My Full name is Cionta Immanuel Kaban, I live in Depok City,
                 Indonesia
-              </p>
-              <p>I Interested to be a Software Engineer</p>
+              </h1>
+              <h1>I Interested to be a Software Engineer</h1>
             </div>
             <div className="w-full">
-              <p className="font-bold text-2xl border-b">
+              <h1 className="font-bold text-2xl border-b">
                 Lets Connect on Social Media!
-              </p>
+              </h1>
               <div className="flex flex-row pt-4">
                 <Link
                   href={
@@ -52,16 +53,16 @@ const Beranda: FC = (): ReactElement => {
             </div>
           </div>
         </div>
-        <p className="font-bold text-2xl border-b pt-10">Project</p>
+        <h1 className="font-bold text-2xl border-b pt-10">Project</h1>
         <div className="grid grid-cols-2 place-items-center pt-12">
           <div className="flex flex-row space-x-10">
             <Image src={Logo} alt="Logo" width={100} height={100} />
             <div className="space-y-3">
               <h1 className="text-2xl font-semibold">Youtube Clone</h1>
-              <p className="w-[400px]">
+              <h1 className="w-[400px]">
                 This project created with ReactJs CRA. Consume public API from
                 restapi.com
-              </p>
+              </h1>
             </div>
           </div>
           <div className="flex flex-row space-x-10">
@@ -70,12 +71,13 @@ const Beranda: FC = (): ReactElement => {
               <h1 className="text-2xl font-semibold">
                 Todo List with Rest API
               </h1>
-              <p className="w-[400px]">
+              <h1 className="w-[400px]">
                 This project created with ReactJs CRA with local JSON server.
-              </p>
+              </h1>
             </div>
           </div>
         </div>
+        <div></div>
       </div>
     </BaseLayout>
   );

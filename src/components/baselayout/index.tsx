@@ -9,7 +9,7 @@ type TBaseLayout = {
 const BaseLayout = ({ children }: TBaseLayout) => {
   return (
     <div className="bg-black min-h-screen font-mono">
-      <div className="flex flex-col px-20">
+      <div className="flex flex-col px-20 w-full">
         <nav className="flex justify-around w-full py-5 text-white">
           <ul className="flex w-full flex-row justify-between place-items-center h-full">
             <p>
