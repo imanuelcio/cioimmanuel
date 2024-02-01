@@ -10,7 +10,7 @@ import Link from "next/link";
 const Beranda: FC = (): ReactElement => {
   return (
     <BaseLayout>
-      <div className="w-full h-full scrollbar-hide">
+      <div className="w-full h-full">
         <div className="space-y-10 justify-center w-full">
           <div className="flex pt-10">
             <h1 className="text-2xl">
